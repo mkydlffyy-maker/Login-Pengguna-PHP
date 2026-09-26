@@ -1,0 +1,340 @@
+/* =========================
+   PENGATURAN DASAR
+   ========================= */
+
+/* Mengatur semua elemen */
+* {
+    box-sizing: border-box; /* Ukuran elemen termasuk padding dan border */
+    margin: 0; /* Menghilangkan margin bawaan */
+    padding: 0; /* Menghilangkan padding bawaan */
+    font-family: Arial, sans-serif; /* Mengatur jenis font */
+}
+
+
+/* =========================
+   TAMPILAN BODY
+   ========================= */
+
+body {
+    min-height: 100vh; /* Tinggi minimal 1 layar penuh */
+
+    /* Menggunakan Flexbox */
+    display: flex;
+
+    /* Posisi horizontal di tengah */
+    justify-content: center;
+
+    /* Posisi vertikal di tengah */
+    align-items: center;
+
+    /* Membuat background gradasi */
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+
+/* =========================
+   CONTAINER LOGIN
+   ========================= */
+
+.login-container {
+    width: 400px; /* Lebar kotak login */
+
+    background-color: white; /* Warna background putih */
+
+    padding: 40px; /* Jarak isi dengan tepi container */
+
+    border-radius: 15px; /* Membuat sudut menjadi melengkung */
+
+    /* Memberikan bayangan pada container */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
+    width: 60px; /* Lebar logo */
+    height: 60px; /* Tinggi logo */
+
+    /* Membuat logo berada di tengah */
+    margin: 0 auto 20px;
+
+    border-radius: 50%; /* Membuat bentuk lingkaran */
+
+    background-color: #2563eb; /* Warna background logo */
+    color: white; /* Warna tulisan logo */
+
+    /* Mengatur posisi isi logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px; /* Ukuran tulisan */
+    font-weight: bold; /* Membuat tulisan tebal */
+}
+
+
+/* =========================
+   JUDUL
+   ========================= */
+
+h2 {
+    text-align: center; /* Teks berada di tengah */
+
+    color: #1f2937; /* Warna teks */
+
+    margin-bottom: 8px; /* Jarak bawah */
+}
+
+
+/* =========================
+   SUBTITLE
+   ========================= */
+
+.subtitle {
+    text-align: center; /* Teks di tengah */
+
+    color: #6b7280; /* Warna teks abu-abu */
+
+    font-size: 14px; /* Ukuran teks */
+
+    margin-bottom: 30px; /* Jarak bawah */
+}
+
+
+/* =========================
+   GROUP FORM
+   ========================= */
+
+.form-group {
+    margin-bottom: 20px; /* Jarak antar input */
+}
+
+
+/* =========================
+   LABEL
+   ========================= */
+
+label {
+    display: block; /* Label menjadi satu blok */
+
+    margin-bottom: 8px; /* Jarak label dengan input */
+
+    color: #374151; /* Warna teks */
+
+    font-size: 14px; /* Ukuran teks */
+
+    font-weight: bold; /* Tulisan tebal */
+}
+
+
+/* =========================
+   INPUT
+   ========================= */
+
+input {
+    width: 100%; /* Lebar input memenuhi container */
+
+    padding: 13px; /* Jarak isi dengan tepi input */
+
+    border: 1px solid #d1d5db; /* Border input */
+
+    border-radius: 8px; /* Sudut input melengkung */
+
+    font-size: 14px; /* Ukuran tulisan */
+
+    outline: none; /* Menghilangkan outline bawaan browser */
+
+    transition: 0.2s; /* Animasi perubahan selama 0.2 detik */
+}
+
+
+/* Ketika input sedang dipilih/fokus */
+input:focus {
+    border-color: #2563eb; /* Warna border berubah menjadi biru */
+
+    /* Memberikan efek bayangan saat input dipilih */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   TOMBOL LOGIN
+   ========================= */
+
+.login-button {
+    width: 100%; /* Lebar tombol memenuhi container */
+
+    padding: 13px; /* Jarak isi dengan tepi tombol */
+
+    border: none; /* Menghilangkan border */
+
+    border-radius: 8px; /* Sudut tombol melengkung */
+
+    background-color: #2563eb; /* Warna tombol */
+
+    color: white; /* Warna tulisan */
+
+    font-size: 15px; /* Ukuran tulisan */
+
+    font-weight: bold; /* Tulisan tebal */
+
+    cursor: pointer; /* Cursor berubah menjadi tangan */
+
+    transition: 0.2s; /* Animasi perubahan */
+}
+
+
+/* Ketika mouse diarahkan ke tombol */
+.login-button:hover {
+    background-color: #1d4ed8; /* Warna tombol berubah */
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    text-align: center; /* Teks di tengah */
+
+    margin-top: 25px; /* Jarak dari atas */
+
+    color: #9ca3af; /* Warna abu-abu */
+
+    font-size: 12px; /* Ukuran tulisan kecil */
+}
+
+
+/* =========================
+   TAMPILAN HASIL LOGIN
+   ========================= */
+
+.result-container {
+    width: 400px; /* Lebar container hasil */
+
+    background-color: white; /* Background putih */
+
+    padding: 40px; /* Jarak isi dengan tepi */
+
+    border-radius: 15px; /* Sudut melengkung */
+
+    text-align: center; /* Semua teks di tengah */
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+
+/* =========================
+   ICON HASIL LOGIN
+   ========================= */
+
+.result-icon {
+    width: 70px; /* Lebar icon */
+    height: 70px; /* Tinggi icon */
+
+    margin: 0 auto 20px; /* Posisi tengah + jarak bawah */
+
+    border-radius: 50%; /* Membuat icon berbentuk lingkaran */
+
+    /* Mengatur posisi tanda centang / silang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white; /* Warna icon */
+
+    font-size: 35px; /* Ukuran icon */
+
+    font-weight: bold; /* Icon dibuat tebal */
+}
+
+
+/* =========================
+   LOGIN BERHASIL
+   ========================= */
+
+/* Jika container memiliki class "berhasil" */
+.result-container.berhasil {
+    border-top: 5px solid #16a34a; /* Border atas warna hijau */
+}
+
+
+/* Icon pada kondisi berhasil */
+.berhasil .result-icon {
+    background-color: #16a34a; /* Background icon hijau */
+}
+
+
+/* Judul pada kondisi berhasil */
+.berhasil h2 {
+    color: #15803d; /* Warna judul hijau */
+}
+
+
+/* =========================
+   LOGIN GAGAL
+   ========================= */
+
+/* Jika container memiliki class "gagal" */
+.result-container.gagal {
+    border-top: 5px solid #dc2626; /* Border atas warna merah */
+}
+
+
+/* Icon pada kondisi gagal */
+.gagal .result-icon {
+    background-color: #dc2626; /* Background icon merah */
+}
+
+
+/* Judul pada kondisi gagal */
+.gagal h2 {
+    color: #b91c1c; /* Warna judul merah */
+}
+
+
+/* =========================
+   PESAN HASIL LOGIN
+   ========================= */
+
+.result-message {
+    color: #6b7280; /* Warna teks abu-abu */
+
+    margin-top: 10px; /* Jarak atas */
+
+    margin-bottom: 25px; /* Jarak bawah */
+
+    line-height: 1.5; /* Jarak antar baris */
+}
+
+
+/* =========================
+   TOMBOL KEMBALI
+   ========================= */
+
+.back-button {
+    display: block; /* Membuat link menjadi satu blok */
+
+    padding: 12px; /* Jarak isi dengan tepi */
+
+    background-color: #2563eb; /* Warna tombol */
+
+    color: white; /* Warna tulisan */
+
+    text-decoration: none; /* Menghilangkan garis bawah link */
+
+    border-radius: 8px; /* Sudut melengkung */
+
+    font-weight: bold; /* Tulisan tebal */
+
+    transition: 0.2s; /* Animasi perubahan */
+}
+
+
+/* Ketika mouse diarahkan ke tombol kembali */
+.back-button:hover {
+    background-color: #1d4ed8; /* Warna berubah */
+}
