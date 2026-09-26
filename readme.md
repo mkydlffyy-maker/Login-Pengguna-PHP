@@ -1,6 +1,6 @@
 # UJIKOM OOP PHP - Sistem Login
 
-Project ini merupakan aplikasi login sederhana yang dibuat menggunakan PHP dengan menerapkan konsep Object-Oriented Programming (OOP).
+Project ini merupakan aplikasi login sederhana yang dibuat menggunakan PHP dengan konsep Object-Oriented Programming (OOP) serta menerapkan konsep Enkapsulasi.
 
 ## 📌 Deskripsi
 
